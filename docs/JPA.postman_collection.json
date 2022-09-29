@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "caabb254-85d0-458b-950e-a50cf2c165fe",
+		"name": "JPA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2271501"
+	},
+	"item": [
+		{
+			"name": "获取班级分页",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/class/page?current=0&pageSize=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"class",
+						"page"
+					],
+					"query": [
+						{
+							"key": "current",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取班级列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/class/find?current=0&pageSize=10&name=一年",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"class",
+						"find"
+					],
+					"query": [
+						{
+							"key": "current",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "name",
+							"value": "一年"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加班级",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"一年级一班\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/class/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"class",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取老师分页",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/teacher/page?current=0&pageSize=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"page"
+					],
+					"query": [
+						{
+							"key": "current",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取老师列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/teacher/find?name=老师",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"find"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "老师"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加老师",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"王老师\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/teacher/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取学生分页1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/student/page1?current=0&pageSize=10&name=张",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"page1"
+					],
+					"query": [
+						{
+							"key": "current",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "name",
+							"value": "张"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取学生分页2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/student/page2?current=0&pageSize=10&name=张",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"page2"
+					],
+					"query": [
+						{
+							"key": "current",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "name",
+							"value": "张"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取学生分页3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/student/page3?name=张三同学",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"page3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "张三同学"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加学生",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"张三同学\",\r\n    \"classId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/student/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
